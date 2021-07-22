@@ -1,9 +1,10 @@
 import "./App.css";
+import Search from "./components/Search";
 
 function App() {
   return (
     <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
+      <Search />
     </div>
   );
 }
