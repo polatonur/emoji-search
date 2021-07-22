@@ -1,1 +1,119 @@
 /* Other rules */
+/* SEARCH */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Neucha", cursive;
+  font-size: 3rem;
+  margin: 0 auto 40px;
+  width: 1000px;
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+input {
+  border: solid 2px rgb(207, 197, 197);
+  border-radius: 9px;
+  width: 400px;
+  height: 40px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-family: "Neucha", cursive;
+  text-align: center;
+}
+
+/* LINE */
+.line {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  padding: 4px 10px;
+  height: 40px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-family: "Neucha", cursive;
+}
+/* .line > span:first-child {
+  margin-right: 10px;
+} */
+.line:hover {
+  background-color: rgb(240, 222, 199);
+  box-shadow: 0 0 5px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808080;
+  font-size: 16px;
+  line-height: 16px;
+  height: 60px;
+}
+footer span,
+footer a {
+  font-family: "Neucha", cursive;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  .search {
+    font-size: 2rem;
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+  .line {
+    width: 80vw;
+    padding: 4px 10px;
+    height: 40px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-family: "Neucha", cursive;
+  }
+}
+@media (max-width: 700px) {
+  .search {
+    font-size: 1.5rem;
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+
+  .line {
+    width: 80vw;
+  }
+}
+@media (max-width: 500px) {
+  .search {
+    font-size: 1.1rem;
+
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+
+  input {
+    font-size: 1rem;
+    width: 70%;
+  }
+
+  .line {
+    font-size: 1rem;
+
+    width: 80vw;
+  }
+}

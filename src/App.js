@@ -1,10 +1,12 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import Search from "./components/Search";
 
 function App() {
   return (
-    <div>
+    <div className="main">
       <Search />
+      <Footer />
     </div>
   );
 }

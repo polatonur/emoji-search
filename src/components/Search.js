@@ -4,26 +4,26 @@ import { useState } from "react";
 
 const Search = () => {
   const [keywords, setKeywords] = useState("");
-  let foundEmojis = [];
+  //   let foundEmojies = emojis;
+
   const handleSearch = (event) => {
     console.log("handle");
     setKeywords(event.target.value);
-    const regex = new RegExp(keywords, "ig");
-    foundEmojis = emojis.filter((emoji) => {
-      console.log(regex.test(emoji.keywords));
-      return regex.test(emoji.keywords);
-    });
   };
-  console.log(foundEmojis);
+
+  const regex = new RegExp(keywords, "gi");
+  let foundEmojies = emojis.filter((emoji) => {
+    return regex.test(emoji.keywords);
+  });
   return (
-    <div>
-      <h1>😎 EmojiSearch 😎</h1>
+    <div className="search">
+      <h1>😎 Emoji Search 😎</h1>
       <input
         onChange={handleSearch}
         type="search"
         placeholder="What emoji are you looking for?"
       />
-      {foundEmojis.map((emoji, index) => {
+      {foundEmojies.map((emoji, index) => {
         return <Line key={index} title={emoji.title} symbol={emoji.symbol} />;
       })}
     </div>

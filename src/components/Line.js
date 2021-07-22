@@ -1,10 +1,9 @@
 const Line = ({ title, symbol }) => {
   return (
-    <div>
-      <span>
-        {symbol}
-        {title}
-      </span>
+    <div className="line">
+      <p>
+        {symbol} {title}
+      </p>
     </div>
   );
 };
